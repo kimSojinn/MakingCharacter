@@ -1,0 +1,142 @@
+body {
+  background-image: url("img/green.png");
+  background-repeat: repeat;
+}
+
+.koala {
+  position: relative;
+  margin: 200px auto;
+  width: 400px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.face {
+  position: absolute;
+  border: 4px solid#4d4d4d;
+  width: 330px;
+  height: 300px;
+  background: #b3b3b3;
+  border-radius: 150% 150% 90% 90%;
+  box-shadow: inset #4d4d4d;
+}
+
+.ear {
+  position: absolute;
+  top: 30px;
+  width: 150px;
+  height: 130px;
+  border: 4px solid #4d4d4d;
+  border-radius: 45%;
+  background: #b3b3b3;
+  z-index: -2;
+}
+
+.ear.left {
+  left: -30px;
+}
+
+.ear.right {
+  right: -30px;
+}
+
+.in-ear {
+  position: absolute;
+  top: 43px;
+  width: 100px;
+  height: 100px;
+  border-radius: 45%;
+  border: 4px solid #4d4d4d;
+  background: #e6e6e6;
+}
+
+.in-ear.left {
+  left: 0px;
+}
+
+.in-ear.right {
+  right: 0px;
+}
+
+.eye {
+  position: absolute;
+  top: 150px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+}
+
+.eye.left {
+  left: 100px;
+}
+
+.eye.right {
+  right: 100px;
+}
+
+.nose {
+  position: absolute;
+  top: 160px;
+  left: 42%;
+  width: 50px;
+  height: 70px;
+  border-radius: 100% 100% 70% 70%;
+  background: black;
+}
+
+.cheek {
+  position: absolute;
+  top: 200px;
+  width: 35px;
+  height: 10px;
+  border: 4px solid #4d4d4d;
+  border-radius: 50%;
+  background: pink;
+}
+
+.cheek.left {
+  left: 40px;
+}
+
+.cheek.right {
+  right: 40px;
+}
+
+.cheek {
+  background: linear-gradient(
+    -45deg,
+    #fff,
+    #ffe6ea,
+    #ff99aa,
+    #ff6680,
+    #ff3355,
+    #e60026,
+    #99001a
+  );
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tie {
+  position: absolute;
+  width: 320px;
+  top: 185px;
+  right: 9.5%;
+  z-index: 5;
+}
